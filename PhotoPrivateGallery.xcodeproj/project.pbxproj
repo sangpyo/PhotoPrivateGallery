@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661A6CFA20E26D97001636DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661A6CF920E26D97001636DF /* AppDelegate.swift */; };
+		661A6CFF20E26D97001636DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661A6CFD20E26D97001636DF /* Main.storyboard */; };
+		661A6D0120E26D98001636DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661A6D0020E26D98001636DF /* Assets.xcassets */; };
+		661A6D0420E26D98001636DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661A6D0220E26D98001636DF /* LaunchScreen.storyboard */; };
+		6624364320F79C750019ECAD /* PhotoGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6624364220F79C750019ECAD /* PhotoGalleryViewController.swift */; };
+		6624364520F79CA80019ECAD /* PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6624364420F79CA80019ECAD /* PhotoGallery.swift */; };
+		6624364820F79EA30019ECAD /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6624364720F79EA30019ECAD /* PhotoViewCell.swift */; };
+		6624364A20F79F560019ECAD /* PhotoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6624364920F79F560019ECAD /* PhotoPageViewController.swift */; };
+		6624364C20F7A3380019ECAD /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6624364B20F7A3380019ECAD /* PhotoViewController.swift */; };
+		664D5ADA20FF8E350075A1AF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 664D5AD820FF8E350075A1AF /* README.md */; };
+		664D5ADB20FF8E350075A1AF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 664D5AD920FF8E350075A1AF /* LICENSE */; };
+		66A2D63120FE2B46005E6403 /* girl-walking-wall-32246.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5DF20FE2B0D005E6403 /* girl-walking-wall-32246.jpg */; };
+		66A2D63220FE2B46005E6403 /* berries-blackberries-breakfast-698857.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E020FE2B0D005E6403 /* berries-blackberries-breakfast-698857.jpg */; };
+		66A2D63320FE2B46005E6403 /* addiction-aerial-background-1056554.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E120FE2B0D005E6403 /* addiction-aerial-background-1056554.jpg */; };
+		66A2D63420FE2B46005E6403 /* adult-beautiful-blue-eyes-206563.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E220FE2B0D005E6403 /* adult-beautiful-blue-eyes-206563.jpg */; };
+		66A2D63520FE2B46005E6403 /* apple-bright-close-up-802959.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E320FE2B0D005E6403 /* apple-bright-close-up-802959.jpg */; };
+		66A2D63620FE2B46005E6403 /* aerial-view-architecture-bridges-681335.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E420FE2B0D005E6403 /* aerial-view-architecture-bridges-681335.jpg */; };
+		66A2D63720FE2B46005E6403 /* adult-beautiful-cold-709803.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E520FE2B0D005E6403 /* adult-beautiful-cold-709803.jpg */; };
+		66A2D63820FE2B46005E6403 /* album-black-classic-167092.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E620FE2B0D005E6403 /* album-black-classic-167092.jpg */; };
+		66A2D63920FE2B46005E6403 /* boardwalk-daylight-environment-1204937.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E720FE2B0D005E6403 /* boardwalk-daylight-environment-1204937.jpg */; };
+		66A2D63A20FE2B46005E6403 /* attractive-beautiful-beauty-731695.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E820FE2B0D005E6403 /* attractive-beautiful-beauty-731695.jpg */; };
+		66A2D63B20FE2B46005E6403 /* child-girl-little-36483.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E920FE2B0D005E6403 /* child-girl-little-36483.jpg */; };
+		66A2D63C20FE2B46005E6403 /* pexels-photo-712651.jpeg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EA20FE2B0D005E6403 /* pexels-photo-712651.jpeg */; };
+		66A2D63D20FE2B46005E6403 /* aerial-architecture-buildings-286744.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EB20FE2B0D005E6403 /* aerial-architecture-buildings-286744.jpg */; };
+		66A2D63E20FE2B46005E6403 /* attractive-beautiful-beauty-1030848.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EC20FE2B0D005E6403 /* attractive-beautiful-beauty-1030848.jpg */; };
+		66A2D63F20FE2B46005E6403 /* adult-beautiful-blur-445109.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5ED20FE2B0D005E6403 /* adult-beautiful-blur-445109.jpg */; };
+		66A2D64020FE2B46005E6403 /* attractive-beautiful-beauty-594421.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EE20FE2B0D005E6403 /* attractive-beautiful-beauty-594421.jpg */; };
+		66A2D64120FE2B46005E6403 /* earphones-earpods-justifyyourlove-802958.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EF20FE2B0D005E6403 /* earphones-earpods-justifyyourlove-802958.jpg */; };
+		66A2D64220FE2B46005E6403 /* adorable-beautiful-child-265957.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F020FE2B0D005E6403 /* adorable-beautiful-child-265957.jpg */; };
+		66A2D64320FE2B46005E6403 /* antioxidant-berry-beverage-1229361.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F120FE2B0D005E6403 /* antioxidant-berry-beverage-1229361.jpg */; };
+		66A2D64420FE2B46005E6403 /* beach-bird-s-eye-view-colors-697313.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F220FE2B0D005E6403 /* beach-bird-s-eye-view-colors-697313.jpg */; };
+		66A2D64520FE2B46005E6403 /* audio-dj-mix-63703.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F320FE2B0D005E6403 /* audio-dj-mix-63703.jpg */; };
+		66A2D64620FE2B46005E6403 /* beautiful-cellphone-cute-761963.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F420FE2B0D005E6403 /* beautiful-cellphone-cute-761963.jpg */; };
+		66A2D64720FE2B46005E6403 /* cheerful-club-concert-2143.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F520FE2B0D005E6403 /* cheerful-club-concert-2143.jpg */; };
+		66A2D64820FE2B46005E6403 /* analogue-blur-classic-164828.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F720FE2B0D005E6403 /* analogue-blur-classic-164828.jpg */; };
+		66A2D64920FE2B46005E6403 /* acoustic-guitar-art-artistic-668295.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F820FE2B0D005E6403 /* acoustic-guitar-art-artistic-668295.jpg */; };
+		66A2D64A20FE2B46005E6403 /* black-forest-grass-1541.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F920FE2B0D005E6403 /* black-forest-grass-1541.jpg */; };
+		66A2D64B20FE2B46005E6403 /* backlit-beach-clouds-762528.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FA20FE2B0D005E6403 /* backlit-beach-clouds-762528.jpg */; };
+		66A2D64C20FE2B46005E6403 /* adorable-animal-baby-160933.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FB20FE2B0D005E6403 /* adorable-animal-baby-160933.jpg */; };
+		66A2D64D20FE2B46005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FC20FE2B0D005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg */; };
+		66A2D64E20FE2B46005E6403 /* beverage-chocolate-cocoa-301650.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FD20FE2B0D005E6403 /* beverage-chocolate-cocoa-301650.jpg */; };
+		66A2D64F20FE2B46005E6403 /* attractive-beautiful-beauty-1071049.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FE20FE2B0D005E6403 /* attractive-beautiful-beauty-1071049.jpg */; };
+		66A2D65020FE2B46005E6403 /* adolescent-beautiful-black-dress-264172.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FF20FE2B0D005E6403 /* adolescent-beautiful-black-dress-264172.jpg */; };
+		66A2D65120FE2B46005E6403 /* beautiful-bride-dress-157757.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60020FE2B0D005E6403 /* beautiful-bride-dress-157757.jpg */; };
+		66A2D65220FE2B46005E6403 /* applause-audience-band-196652.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60120FE2B0D005E6403 /* applause-audience-band-196652.jpg */; };
+		66A2D65320FE2B46005E6403 /* back-view-hair-observing-169908.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60220FE2B0D005E6403 /* back-view-hair-observing-169908.jpg */; };
+		66A2D65420FE2B46005E6403 /* music-music-player-record-player-1791.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60320FE2B0D005E6403 /* music-music-player-record-player-1791.jpg */; };
+		66A2D65520FE2B46005E6403 /* beautiful-brunette-business-388517.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60420FE2B0D005E6403 /* beautiful-brunette-business-388517.jpg */; };
+		66A2D65620FE2B46005E6403 /* close-up-fashion-female-373945.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60520FE2B0D005E6403 /* close-up-fashion-female-373945.jpg */; };
+		66A2D65720FE2B46005E6403 /* abstract-art-artistic-1212408.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60620FE2B0D005E6403 /* abstract-art-artistic-1212408.jpg */; };
+		66A2D65820FE2B46005E6403 /* audience-band-concert-1105666.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60720FE2B0D005E6403 /* audience-band-concert-1105666.jpg */; };
+		66CEC4C620E7B1A7007E1D32 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CEC4C520E7B1A7007E1D32 /* Photo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		661FFCC120FE16B20031FDBA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Photos;
+			dstSubfolderSpec = 7;
+			files = (
+				66A2D63120FE2B46005E6403 /* girl-walking-wall-32246.jpg in CopyFiles */,
+				66A2D63220FE2B46005E6403 /* berries-blackberries-breakfast-698857.jpg in CopyFiles */,
+				66A2D63320FE2B46005E6403 /* addiction-aerial-background-1056554.jpg in CopyFiles */,
+				66A2D63420FE2B46005E6403 /* adult-beautiful-blue-eyes-206563.jpg in CopyFiles */,
+				66A2D63520FE2B46005E6403 /* apple-bright-close-up-802959.jpg in CopyFiles */,
+				66A2D63620FE2B46005E6403 /* aerial-view-architecture-bridges-681335.jpg in CopyFiles */,
+				66A2D63720FE2B46005E6403 /* adult-beautiful-cold-709803.jpg in CopyFiles */,
+				66A2D63820FE2B46005E6403 /* album-black-classic-167092.jpg in CopyFiles */,
+				66A2D63920FE2B46005E6403 /* boardwalk-daylight-environment-1204937.jpg in CopyFiles */,
+				66A2D63A20FE2B46005E6403 /* attractive-beautiful-beauty-731695.jpg in CopyFiles */,
+				66A2D63B20FE2B46005E6403 /* child-girl-little-36483.jpg in CopyFiles */,
+				66A2D63C20FE2B46005E6403 /* pexels-photo-712651.jpeg in CopyFiles */,
+				66A2D63D20FE2B46005E6403 /* aerial-architecture-buildings-286744.jpg in CopyFiles */,
+				66A2D63E20FE2B46005E6403 /* attractive-beautiful-beauty-1030848.jpg in CopyFiles */,
+				66A2D63F20FE2B46005E6403 /* adult-beautiful-blur-445109.jpg in CopyFiles */,
+				66A2D64020FE2B46005E6403 /* attractive-beautiful-beauty-594421.jpg in CopyFiles */,
+				66A2D64120FE2B46005E6403 /* earphones-earpods-justifyyourlove-802958.jpg in CopyFiles */,
+				66A2D64220FE2B46005E6403 /* adorable-beautiful-child-265957.jpg in CopyFiles */,
+				66A2D64320FE2B46005E6403 /* antioxidant-berry-beverage-1229361.jpg in CopyFiles */,
+				66A2D64420FE2B46005E6403 /* beach-bird-s-eye-view-colors-697313.jpg in CopyFiles */,
+				66A2D64520FE2B46005E6403 /* audio-dj-mix-63703.jpg in CopyFiles */,
+				66A2D64620FE2B46005E6403 /* beautiful-cellphone-cute-761963.jpg in CopyFiles */,
+				66A2D64720FE2B46005E6403 /* cheerful-club-concert-2143.jpg in CopyFiles */,
+				66A2D64820FE2B46005E6403 /* analogue-blur-classic-164828.jpg in CopyFiles */,
+				66A2D64920FE2B46005E6403 /* acoustic-guitar-art-artistic-668295.jpg in CopyFiles */,
+				66A2D64A20FE2B46005E6403 /* black-forest-grass-1541.jpg in CopyFiles */,
+				66A2D64B20FE2B46005E6403 /* backlit-beach-clouds-762528.jpg in CopyFiles */,
+				66A2D64C20FE2B46005E6403 /* adorable-animal-baby-160933.jpg in CopyFiles */,
+				66A2D64D20FE2B46005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg in CopyFiles */,
+				66A2D64E20FE2B46005E6403 /* beverage-chocolate-cocoa-301650.jpg in CopyFiles */,
+				66A2D64F20FE2B46005E6403 /* attractive-beautiful-beauty-1071049.jpg in CopyFiles */,
+				66A2D65020FE2B46005E6403 /* adolescent-beautiful-black-dress-264172.jpg in CopyFiles */,
+				66A2D65120FE2B46005E6403 /* beautiful-bride-dress-157757.jpg in CopyFiles */,
+				66A2D65220FE2B46005E6403 /* applause-audience-band-196652.jpg in CopyFiles */,
+				66A2D65320FE2B46005E6403 /* back-view-hair-observing-169908.jpg in CopyFiles */,
+				66A2D65420FE2B46005E6403 /* music-music-player-record-player-1791.jpg in CopyFiles */,
+				66A2D65520FE2B46005E6403 /* beautiful-brunette-business-388517.jpg in CopyFiles */,
+				66A2D65620FE2B46005E6403 /* close-up-fashion-female-373945.jpg in CopyFiles */,
+				66A2D65720FE2B46005E6403 /* abstract-art-artistic-1212408.jpg in CopyFiles */,
+				66A2D65820FE2B46005E6403 /* audience-band-concert-1105666.jpg in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		661A6CF620E26D97001636DF /* PhotoPrivateGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPrivateGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		661A6CF920E26D97001636DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		661A6CFE20E26D97001636DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		661A6D0020E26D98001636DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		661A6D0320E26D98001636DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		661A6D0520E26D98001636DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6624364220F79C750019ECAD /* PhotoGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewController.swift; sourceTree = "<group>"; };
+		6624364420F79CA80019ECAD /* PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
+		6624364720F79EA30019ECAD /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		6624364920F79F560019ECAD /* PhotoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPageViewController.swift; sourceTree = "<group>"; };
+		6624364B20F7A3380019ECAD /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		664D5AD820FF8E350075A1AF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		664D5AD920FF8E350075A1AF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		66A2D5DF20FE2B0D005E6403 /* girl-walking-wall-32246.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "girl-walking-wall-32246.jpg"; sourceTree = "<group>"; };
+		66A2D5E020FE2B0D005E6403 /* berries-blackberries-breakfast-698857.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "berries-blackberries-breakfast-698857.jpg"; sourceTree = "<group>"; };
+		66A2D5E120FE2B0D005E6403 /* addiction-aerial-background-1056554.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "addiction-aerial-background-1056554.jpg"; sourceTree = "<group>"; };
+		66A2D5E220FE2B0D005E6403 /* adult-beautiful-blue-eyes-206563.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "adult-beautiful-blue-eyes-206563.jpg"; sourceTree = "<group>"; };
+		66A2D5E320FE2B0D005E6403 /* apple-bright-close-up-802959.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "apple-bright-close-up-802959.jpg"; sourceTree = "<group>"; };
+		66A2D5E420FE2B0D005E6403 /* aerial-view-architecture-bridges-681335.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aerial-view-architecture-bridges-681335.jpg"; sourceTree = "<group>"; };
+		66A2D5E520FE2B0D005E6403 /* adult-beautiful-cold-709803.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "adult-beautiful-cold-709803.jpg"; sourceTree = "<group>"; };
+		66A2D5E620FE2B0D005E6403 /* album-black-classic-167092.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "album-black-classic-167092.jpg"; sourceTree = "<group>"; };
+		66A2D5E720FE2B0D005E6403 /* boardwalk-daylight-environment-1204937.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "boardwalk-daylight-environment-1204937.jpg"; sourceTree = "<group>"; };
+		66A2D5E820FE2B0D005E6403 /* attractive-beautiful-beauty-731695.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "attractive-beautiful-beauty-731695.jpg"; sourceTree = "<group>"; };
+		66A2D5E920FE2B0D005E6403 /* child-girl-little-36483.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "child-girl-little-36483.jpg"; sourceTree = "<group>"; };
+		66A2D5EA20FE2B0D005E6403 /* pexels-photo-712651.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pexels-photo-712651.jpeg"; sourceTree = "<group>"; };
+		66A2D5EB20FE2B0D005E6403 /* aerial-architecture-buildings-286744.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aerial-architecture-buildings-286744.jpg"; sourceTree = "<group>"; };
+		66A2D5EC20FE2B0D005E6403 /* attractive-beautiful-beauty-1030848.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "attractive-beautiful-beauty-1030848.jpg"; sourceTree = "<group>"; };
+		66A2D5ED20FE2B0D005E6403 /* adult-beautiful-blur-445109.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "adult-beautiful-blur-445109.jpg"; sourceTree = "<group>"; };
+		66A2D5EE20FE2B0D005E6403 /* attractive-beautiful-beauty-594421.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "attractive-beautiful-beauty-594421.jpg"; sourceTree = "<group>"; };
+		66A2D5EF20FE2B0D005E6403 /* earphones-earpods-justifyyourlove-802958.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "earphones-earpods-justifyyourlove-802958.jpg"; sourceTree = "<group>"; };
+		66A2D5F020FE2B0D005E6403 /* adorable-beautiful-child-265957.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "adorable-beautiful-child-265957.jpg"; sourceTree = "<group>"; };
+		66A2D5F120FE2B0D005E6403 /* antioxidant-berry-beverage-1229361.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "antioxidant-berry-beverage-1229361.jpg"; sourceTree = "<group>"; };
+		66A2D5F220FE2B0D005E6403 /* beach-bird-s-eye-view-colors-697313.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beach-bird-s-eye-view-colors-697313.jpg"; sourceTree = "<group>"; };
+		66A2D5F320FE2B0D005E6403 /* audio-dj-mix-63703.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "audio-dj-mix-63703.jpg"; sourceTree = "<group>"; };
+		66A2D5F420FE2B0D005E6403 /* beautiful-cellphone-cute-761963.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beautiful-cellphone-cute-761963.jpg"; sourceTree = "<group>"; };
+		66A2D5F520FE2B0D005E6403 /* cheerful-club-concert-2143.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "cheerful-club-concert-2143.jpg"; sourceTree = "<group>"; };
+		66A2D5F720FE2B0D005E6403 /* analogue-blur-classic-164828.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "analogue-blur-classic-164828.jpg"; sourceTree = "<group>"; };
+		66A2D5F820FE2B0D005E6403 /* acoustic-guitar-art-artistic-668295.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "acoustic-guitar-art-artistic-668295.jpg"; sourceTree = "<group>"; };
+		66A2D5F920FE2B0D005E6403 /* black-forest-grass-1541.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "black-forest-grass-1541.jpg"; sourceTree = "<group>"; };
+		66A2D5FA20FE2B0D005E6403 /* backlit-beach-clouds-762528.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "backlit-beach-clouds-762528.jpg"; sourceTree = "<group>"; };
+		66A2D5FB20FE2B0D005E6403 /* adorable-animal-baby-160933.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "adorable-animal-baby-160933.jpg"; sourceTree = "<group>"; };
+		66A2D5FC20FE2B0D005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "aerial-aerial-shot-aerial-view-753873.jpg"; sourceTree = "<group>"; };
+		66A2D5FD20FE2B0D005E6403 /* beverage-chocolate-cocoa-301650.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beverage-chocolate-cocoa-301650.jpg"; sourceTree = "<group>"; };
+		66A2D5FE20FE2B0D005E6403 /* attractive-beautiful-beauty-1071049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "attractive-beautiful-beauty-1071049.jpg"; sourceTree = "<group>"; };
+		66A2D5FF20FE2B0D005E6403 /* adolescent-beautiful-black-dress-264172.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "adolescent-beautiful-black-dress-264172.jpg"; sourceTree = "<group>"; };
+		66A2D60020FE2B0D005E6403 /* beautiful-bride-dress-157757.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beautiful-bride-dress-157757.jpg"; sourceTree = "<group>"; };
+		66A2D60120FE2B0D005E6403 /* applause-audience-band-196652.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "applause-audience-band-196652.jpg"; sourceTree = "<group>"; };
+		66A2D60220FE2B0D005E6403 /* back-view-hair-observing-169908.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "back-view-hair-observing-169908.jpg"; sourceTree = "<group>"; };
+		66A2D60320FE2B0D005E6403 /* music-music-player-record-player-1791.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "music-music-player-record-player-1791.jpg"; sourceTree = "<group>"; };
+		66A2D60420FE2B0D005E6403 /* beautiful-brunette-business-388517.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beautiful-brunette-business-388517.jpg"; sourceTree = "<group>"; };
+		66A2D60520FE2B0D005E6403 /* close-up-fashion-female-373945.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "close-up-fashion-female-373945.jpg"; sourceTree = "<group>"; };
+		66A2D60620FE2B0D005E6403 /* abstract-art-artistic-1212408.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "abstract-art-artistic-1212408.jpg"; sourceTree = "<group>"; };
+		66A2D60720FE2B0D005E6403 /* audience-band-concert-1105666.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "audience-band-concert-1105666.jpg"; sourceTree = "<group>"; };
+		66CEC4C520E7B1A7007E1D32 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		661A6CF320E26D97001636DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		660F3D2E20F8E3F200913076 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66CEC4C520E7B1A7007E1D32 /* Photo.swift */,
+				6624364420F79CA80019ECAD /* PhotoGallery.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		660F3D2F20F8E40200913076 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6624364720F79EA30019ECAD /* PhotoViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		660F3D3020F8E40D00913076 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6624364220F79C750019ECAD /* PhotoGalleryViewController.swift */,
+				6624364920F79F560019ECAD /* PhotoPageViewController.swift */,
+				6624364B20F7A3380019ECAD /* PhotoViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		661A6CED20E26D97001636DF = {
+			isa = PBXGroup;
+			children = (
+				664D5AD920FF8E350075A1AF /* LICENSE */,
+				664D5AD820FF8E350075A1AF /* README.md */,
+				66A2D5DE20FE2B0D005E6403 /* photos */,
+				661A6CF820E26D97001636DF /* PhotoPrivateGallery */,
+				661A6CF720E26D97001636DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		661A6CF720E26D97001636DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				661A6CF620E26D97001636DF /* PhotoPrivateGallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		661A6CF820E26D97001636DF /* PhotoPrivateGallery */ = {
+			isa = PBXGroup;
+			children = (
+				6624363F20F796F90019ECAD /* Source */,
+				661A6CF920E26D97001636DF /* AppDelegate.swift */,
+				661A6CFD20E26D97001636DF /* Main.storyboard */,
+				661A6D0020E26D98001636DF /* Assets.xcassets */,
+				661A6D0220E26D98001636DF /* LaunchScreen.storyboard */,
+				661A6D0520E26D98001636DF /* Info.plist */,
+			);
+			path = PhotoPrivateGallery;
+			sourceTree = "<group>";
+		};
+		6624363F20F796F90019ECAD /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				660F3D3020F8E40D00913076 /* Controller */,
+				660F3D2F20F8E40200913076 /* View */,
+				660F3D2E20F8E3F200913076 /* Model */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		66A2D5DE20FE2B0D005E6403 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				66A2D5DF20FE2B0D005E6403 /* girl-walking-wall-32246.jpg */,
+				66A2D5E020FE2B0D005E6403 /* berries-blackberries-breakfast-698857.jpg */,
+				66A2D5E120FE2B0D005E6403 /* addiction-aerial-background-1056554.jpg */,
+				66A2D5E220FE2B0D005E6403 /* adult-beautiful-blue-eyes-206563.jpg */,
+				66A2D5E320FE2B0D005E6403 /* apple-bright-close-up-802959.jpg */,
+				66A2D5E420FE2B0D005E6403 /* aerial-view-architecture-bridges-681335.jpg */,
+				66A2D5E520FE2B0D005E6403 /* adult-beautiful-cold-709803.jpg */,
+				66A2D5E620FE2B0D005E6403 /* album-black-classic-167092.jpg */,
+				66A2D5E720FE2B0D005E6403 /* boardwalk-daylight-environment-1204937.jpg */,
+				66A2D5E820FE2B0D005E6403 /* attractive-beautiful-beauty-731695.jpg */,
+				66A2D5E920FE2B0D005E6403 /* child-girl-little-36483.jpg */,
+				66A2D5EA20FE2B0D005E6403 /* pexels-photo-712651.jpeg */,
+				66A2D5EB20FE2B0D005E6403 /* aerial-architecture-buildings-286744.jpg */,
+				66A2D5EC20FE2B0D005E6403 /* attractive-beautiful-beauty-1030848.jpg */,
+				66A2D5ED20FE2B0D005E6403 /* adult-beautiful-blur-445109.jpg */,
+				66A2D5EE20FE2B0D005E6403 /* attractive-beautiful-beauty-594421.jpg */,
+				66A2D5EF20FE2B0D005E6403 /* earphones-earpods-justifyyourlove-802958.jpg */,
+				66A2D5F020FE2B0D005E6403 /* adorable-beautiful-child-265957.jpg */,
+				66A2D5F120FE2B0D005E6403 /* antioxidant-berry-beverage-1229361.jpg */,
+				66A2D5F220FE2B0D005E6403 /* beach-bird-s-eye-view-colors-697313.jpg */,
+				66A2D5F320FE2B0D005E6403 /* audio-dj-mix-63703.jpg */,
+				66A2D5F420FE2B0D005E6403 /* beautiful-cellphone-cute-761963.jpg */,
+				66A2D5F520FE2B0D005E6403 /* cheerful-club-concert-2143.jpg */,
+				66A2D5F720FE2B0D005E6403 /* analogue-blur-classic-164828.jpg */,
+				66A2D5F820FE2B0D005E6403 /* acoustic-guitar-art-artistic-668295.jpg */,
+				66A2D5F920FE2B0D005E6403 /* black-forest-grass-1541.jpg */,
+				66A2D5FA20FE2B0D005E6403 /* backlit-beach-clouds-762528.jpg */,
+				66A2D5FB20FE2B0D005E6403 /* adorable-animal-baby-160933.jpg */,
+				66A2D5FC20FE2B0D005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg */,
+				66A2D5FD20FE2B0D005E6403 /* beverage-chocolate-cocoa-301650.jpg */,
+				66A2D5FE20FE2B0D005E6403 /* attractive-beautiful-beauty-1071049.jpg */,
+				66A2D5FF20FE2B0D005E6403 /* adolescent-beautiful-black-dress-264172.jpg */,
+				66A2D60020FE2B0D005E6403 /* beautiful-bride-dress-157757.jpg */,
+				66A2D60120FE2B0D005E6403 /* applause-audience-band-196652.jpg */,
+				66A2D60220FE2B0D005E6403 /* back-view-hair-observing-169908.jpg */,
+				66A2D60320FE2B0D005E6403 /* music-music-player-record-player-1791.jpg */,
+				66A2D60420FE2B0D005E6403 /* beautiful-brunette-business-388517.jpg */,
+				66A2D60520FE2B0D005E6403 /* close-up-fashion-female-373945.jpg */,
+				66A2D60620FE2B0D005E6403 /* abstract-art-artistic-1212408.jpg */,
+				66A2D60720FE2B0D005E6403 /* audience-band-concert-1105666.jpg */,
+			);
+			path = photos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		661A6CF520E26D97001636DF /* PhotoPrivateGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661A6D0820E26D98001636DF /* Build configuration list for PBXNativeTarget "PhotoPrivateGallery" */;
+			buildPhases = (
+				661A6CF220E26D97001636DF /* Sources */,
+				661A6CF320E26D97001636DF /* Frameworks */,
+				661A6CF420E26D97001636DF /* Resources */,
+				661FFCC120FE16B20031FDBA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoPrivateGallery;
+			productName = PhotoPrivateGallery;
+			productReference = 661A6CF620E26D97001636DF /* PhotoPrivateGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		661A6CEE20E26D97001636DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "park sang pyo";
+				TargetAttributes = {
+					661A6CF520E26D97001636DF = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 661A6CF120E26D97001636DF /* Build configuration list for PBXProject "PhotoPrivateGallery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 661A6CED20E26D97001636DF;
+			productRefGroup = 661A6CF720E26D97001636DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				661A6CF520E26D97001636DF /* PhotoPrivateGallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661A6CF420E26D97001636DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661A6D0420E26D98001636DF /* LaunchScreen.storyboard in Resources */,
+				661A6D0120E26D98001636DF /* Assets.xcassets in Resources */,
+				664D5ADA20FF8E350075A1AF /* README.md in Resources */,
+				661A6CFF20E26D97001636DF /* Main.storyboard in Resources */,
+				664D5ADB20FF8E350075A1AF /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		661A6CF220E26D97001636DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6624364A20F79F560019ECAD /* PhotoPageViewController.swift in Sources */,
+				661A6CFA20E26D97001636DF /* AppDelegate.swift in Sources */,
+				6624364320F79C750019ECAD /* PhotoGalleryViewController.swift in Sources */,
+				6624364520F79CA80019ECAD /* PhotoGallery.swift in Sources */,
+				66CEC4C620E7B1A7007E1D32 /* Photo.swift in Sources */,
+				6624364820F79EA30019ECAD /* PhotoViewCell.swift in Sources */,
+				6624364C20F7A3380019ECAD /* PhotoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		661A6CFD20E26D97001636DF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661A6CFE20E26D97001636DF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		661A6D0220E26D98001636DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661A6D0320E26D98001636DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		661A6D0620E26D98001636DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		661A6D0720E26D98001636DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		661A6D0920E26D98001636DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoPrivateGallery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = park.sangpyo.PhotoPrivateGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		661A6D0A20E26D98001636DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/PhotoPrivateGallery/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = park.sangpyo.PhotoPrivateGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		661A6CF120E26D97001636DF /* Build configuration list for PBXProject "PhotoPrivateGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661A6D0620E26D98001636DF /* Debug */,
+				661A6D0720E26D98001636DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661A6D0820E26D98001636DF /* Build configuration list for PBXNativeTarget "PhotoPrivateGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661A6D0920E26D98001636DF /* Debug */,
+				661A6D0A20E26D98001636DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 661A6CEE20E26D97001636DF /* Project object */;
+}
