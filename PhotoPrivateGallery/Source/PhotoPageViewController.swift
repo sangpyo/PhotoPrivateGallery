@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Photos
 
 class PhotoPageViewController: UIPageViewController {
 
@@ -16,7 +17,13 @@ class PhotoPageViewController: UIPageViewController {
     @IBAction func didTouchUpSave(_ sender: UIBarButtonItem) {
         let photo = currentViewController().photo!
         
-        UIImageWriteToSavedPhotosAlbum(photo.uiImage, self, #selector(imageSaved(_:didFinishSavingWithError:contextInfo:)), nil)
+        //UIImageWriteToSavedPhotosAlbum(photo.uiImage, self, #selector(imageSaved(_:didFinishSavingWithError:contextInfo:)), nil)
+        
+        PHPhotoLibrary.requestAuthorization { (status) in
+            
+        }
+        
+        let result = PHAssetCollection.fetchTopLevelUserCollections(with: nil)
     }
     
     @objc func imageSaved(_ image: UIImage, didFinishSavingWithError error: NSError?, contextInfo: UnsafeRawPointer) {
