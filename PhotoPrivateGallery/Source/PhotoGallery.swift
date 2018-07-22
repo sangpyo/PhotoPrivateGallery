@@ -15,7 +15,7 @@ class PhotoGallery: NSObject {
     init(photoGalleryPathURL: URL) {
         self.photoGalleryPathURL = photoGalleryPathURL
         
-        print("\(photoGalleryPathURL)")
+        //print("\(photoGalleryPathURL)")
     }
     
     init(photoFolderName: String) {
@@ -23,7 +23,7 @@ class PhotoGallery: NSObject {
         let photoPathURL = path.appendingPathComponent(photoFolderName)
         self.photoGalleryPathURL = photoPathURL
         
-        print("\(photoGalleryPathURL)")
+        //print("\(photoGalleryPathURL)")
     }
     
     func fetchPhotos() -> Int {

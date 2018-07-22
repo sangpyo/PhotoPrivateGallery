@@ -44,6 +44,12 @@ extension CGImage {
     }
 }
 
+extension UIImage {
+    var aspectRatio: CGFloat {
+        return self.size.height / self.size.height
+    }
+}
+
 struct Photo {
     let originalImage: CGImage
     let photoPathURL: URL

@@ -12,16 +12,16 @@ class PhotoGalleryViewController: UICollectionViewController {
 
     static let photoFolderName = "Photos"
     let photoGallery = PhotoGallery(photoFolderName: PhotoGalleryViewController.photoFolderName)
+
+    
+    override func viewDidAppear(_ animated: Bool) {
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
-        layout.minimumInteritemSpacing = 0.2
-        layout.minimumLineSpacing = 1.0
-        
         _ = photoGallery.fetchPhotos()
-        
         self.collectionView.dataSource = photoGallery
 
     }
@@ -34,9 +34,26 @@ class PhotoGalleryViewController: UICollectionViewController {
         let indexPath = self.collectionView.indexPathsForSelectedItems!.first!
         viewController.initialIndex = indexPath.row
         viewController.photoGallery = self.photoGallery
-        
+
+    }
+    
+    private func popupPhoto() {
+        //UIViewPropertyAnimator(duration: 1.5, dampingRatio: 1.0) {
+        UIViewPropertyAnimator(duration: 0.3, curve: .easeIn) {
+            
+        }.startAnimation()
     }
 
+    @IBAction func handlePopupPhoto(_ sender: UIButton) {
+        let cell = sender.superview!.superview! as! UICollectionViewCell
+        if let index = self.collectionView?.indexPath(for: cell) {
+            let photo = photoGallery.photoAt(index.row)!
+            let photoShow = PhotoShowController(photo: photo)
+            self.present(photoShow, animated: true) {
+
+            }
+        }
+    }
 }
 
 extension PhotoGalleryViewController: UICollectionViewDelegateFlowLayout {

@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             try FileManager.default.copyItem(at: source, to: target)
         } catch let e {
-            print("\(e)")
+            //print("\(e)")
         }
         
     }
