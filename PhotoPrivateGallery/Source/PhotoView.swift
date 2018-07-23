@@ -12,31 +12,76 @@ class PhotoView: UIView {
 
     private let visualEffectView = UIVisualEffectView()
     private let scrollView = UIScrollView()
+    private let containerView = UIView()
     private let imageView = UIImageView()
     
     var baseMargin = CGFloat(44.0) {
         didSet {
-            
+            centering()
         }
+    }
+    
+    var minimumZoomScale: CGFloat {
+        guard let image = self.imageView.image else { return 1.0 }
+        
+        var zoomScale: CGFloat = 1.0
+//        if image.size.width <= image.size.height {
+            zoomScale = self.scrollView.frame.size.width / image.size.width
+//        } else {
+//            zoomScale = self.scrollView.frame.size.height / image.size.height
+//        }
+        return zoomScale
+    }
+    
+    var maximumZoomScale: CGFloat {
+        guard let image = self.image else {
+            return 1.0
+        }
+//        if image.size.width <= image.size.height {
+            return image.size.width / self.scrollView.frame.size.width
+//        } else {
+//            return image.size.height / self.scrollView.frame.size.height
+//        }
     }
     
     override var frame: CGRect {
         didSet {
-            super.frame = frame
             self.updateSubviews()
         }
+    }
+    
+    override var center: CGPoint {
+        didSet {
+            self.updateSubviews()
+            self.scrollView.zoomScale = minimumZoomScale
+        }
+    }
+    
+    override func layoutSubviews() {
+        self.updateSubviews()
+        self.scrollView.maximumZoomScale = maximumZoomScale
+        self.scrollView.minimumZoomScale = minimumZoomScale
+        self.scrollView.zoomScale = minimumZoomScale
     }
     
     var image: UIImage? {
         set {
             self.imageView.image = newValue
-            if nil != newValue {
-                //scrollView.contentSize = self.frame.size
+            if let image = newValue {
+                self.imageView.frame.size = image.size
+                self.containerView.frame.size = image.size
+                self.scrollView.zoomScale = minimumZoomScale
+                centering()
             }
         }
         get {
             return self.imageView.image
         }
+    }
+    
+    convenience init(image: UIImage) {
+        self.init(frame: CGRect.zero)
+        self.image = image
     }
     
     override init(frame: CGRect) {
@@ -51,17 +96,19 @@ class PhotoView: UIView {
     
     private func setup() {
         
+        self.containerView.backgroundColor = UIColor.clear
         self.scrollView.backgroundColor = UIColor.clear
         self.backgroundColor = UIColor.clear
         
         self.addSubview(self.visualEffectView)
         self.addSubview(self.scrollView)
-        self.scrollView.addSubview(self.imageView)
+        self.scrollView.addSubview(self.containerView)
+        self.containerView.addSubview(self.imageView)
         
         self.visualEffectView.effect = UIBlurEffect(style: .regular)
 
-        self.scrollView.minimumZoomScale = 1.0
-        self.scrollView.maximumZoomScale = 4.0
+        self.scrollView.minimumZoomScale = minimumZoomScale
+        self.scrollView.maximumZoomScale = maximumZoomScale
         self.scrollView.delegate = self
         self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouch.TouchType.direct.rawValue as NSNumber]
         self.scrollView.pinchGestureRecognizer?.allowedTouchTypes = [UITouch.TouchType.direct.rawValue as NSNumber]
@@ -72,41 +119,12 @@ class PhotoView: UIView {
         self.updateSubviews()
     }
 
-    func updateProperMaximumZoom() {
-        guard let image = self.image else {
-            return
-        }
-        var width = self.scrollView.frame.width
-        var height = width * image.aspectRatio
-        
-        if height > self.scrollView.frame.height {
-            height = self.scrollView.frame.height
-            width = height / image.aspectRatio
-        }
-    }
-    
-    override func layoutSubviews() {
-        self.updateSubviews()
-    }
-    
     private func updateSubviews() {
-//        let containerOrigin = CGPoint(x: baseMargin / 2, y: baseMargin / 2)
-//        let containerSize = CGSize(width: frame.size.width - baseMargin, height: frame.size.height - baseMargin)
-//
-//        containerView.frame = CGRect(origin: containerOrigin, size: containerSize)
-//        imageView.frame = CGRect(origin: CGPoint.zero, size: containerSize)
-        
         let rect = CGRect(origin: CGPoint.zero, size: self.frame.size)
         self.visualEffectView.frame = rect
         self.scrollView.frame = rect
-        
-        if let image = self.imageView.image {
-            let width = self.scrollView.frame.width
-            let height = width * image.aspectRatio
-            let imageRect = CGRect(origin: CGPoint.zero, size: CGSize(width: width, height: height))
-            self.imageView.frame = imageRect
-        }
-        
+        self.scrollView.minimumZoomScale = minimumZoomScale
+        self.scrollView.maximumZoomScale = maximumZoomScale
         self.centering()
     }
     
@@ -129,11 +147,11 @@ extension PhotoView: UIScrollViewDelegate {
     }
     
     func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-        print("\(scale)")
+
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        scrollView.con
+        
     }
 }
 

@@ -24,10 +24,6 @@ class PhotoShowController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +34,8 @@ class PhotoShowController: UIViewController {
         self.view = photoView
 
         photoView.image = photo.uiImage
+        
+        photoView.baseMargin = 44.0
     }
     
 }

@@ -44,8 +44,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func copyPhoto() {
         let path = FileManager.default.urls(for: FileManager.SearchPathDirectory.documentDirectory , in: FileManager.SearchPathDomainMask.userDomainMask).first!
         let target = path.appendingPathComponent(PhotoGalleryViewController.photoFolderName)
+        print("\(target)")
         let source = Bundle.main.url(forResource: PhotoGalleryViewController.photoFolderName, withExtension: nil)!
         
+        try? FileManager.default.removeItem(at: target)
         do {
             try FileManager.default.copyItem(at: source, to: target)
         } catch let e {

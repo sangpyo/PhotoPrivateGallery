@@ -7,6 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6609987021062E1F0094C9D9 /* architecture-buildings-city-533930.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 660998652106266B0094C9D9 /* architecture-buildings-city-533930.jpg */; };
+		6609987121062E1F0094C9D9 /* balance-ballet-ballet-dancer-219615.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 660998642106266B0094C9D9 /* balance-ballet-ballet-dancer-219615.jpg */; };
+		6609987221062E1F0094C9D9 /* beach-clouds-landscape-63564.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 660998682106266C0094C9D9 /* beach-clouds-landscape-63564.jpg */; };
+		6609987321062E1F0094C9D9 /* bloom-blossom-cherry-blossom-54630.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 660998672106266C0094C9D9 /* bloom-blossom-cherry-blossom-54630.jpg */; };
+		6609987421062E1F0094C9D9 /* dark-full-moon-lunar-53153.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 660998662106266B0094C9D9 /* dark-full-moon-lunar-53153.jpg */; };
+		6609987521062E1F0094C9D9 /* daylight-environment-forest-459225.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 660998692106266C0094C9D9 /* daylight-environment-forest-459225.jpg */; };
+		6609987621062E1F0094C9D9 /* girl-walking-wall-32246.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5DF20FE2B0D005E6403 /* girl-walking-wall-32246.jpg */; };
+		6609987721062E200094C9D9 /* berries-blackberries-breakfast-698857.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E020FE2B0D005E6403 /* berries-blackberries-breakfast-698857.jpg */; };
+		6609987821062E200094C9D9 /* addiction-aerial-background-1056554.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E120FE2B0D005E6403 /* addiction-aerial-background-1056554.jpg */; };
+		6609987921062E200094C9D9 /* adult-beautiful-blue-eyes-206563.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E220FE2B0D005E6403 /* adult-beautiful-blue-eyes-206563.jpg */; };
+		6609987A21062E200094C9D9 /* apple-bright-close-up-802959.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E320FE2B0D005E6403 /* apple-bright-close-up-802959.jpg */; };
+		6609987B21062E200094C9D9 /* aerial-view-architecture-bridges-681335.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E420FE2B0D005E6403 /* aerial-view-architecture-bridges-681335.jpg */; };
+		6609987C21062E200094C9D9 /* adult-beautiful-cold-709803.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E520FE2B0D005E6403 /* adult-beautiful-cold-709803.jpg */; };
+		6609987D21062E200094C9D9 /* album-black-classic-167092.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E620FE2B0D005E6403 /* album-black-classic-167092.jpg */; };
+		6609987E21062E200094C9D9 /* boardwalk-daylight-environment-1204937.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E720FE2B0D005E6403 /* boardwalk-daylight-environment-1204937.jpg */; };
+		6609987F21062E200094C9D9 /* attractive-beautiful-beauty-731695.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E820FE2B0D005E6403 /* attractive-beautiful-beauty-731695.jpg */; };
+		6609988021062E200094C9D9 /* child-girl-little-36483.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E920FE2B0D005E6403 /* child-girl-little-36483.jpg */; };
+		6609988121062E200094C9D9 /* pexels-photo-712651.jpeg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EA20FE2B0D005E6403 /* pexels-photo-712651.jpeg */; };
+		6609988221062E200094C9D9 /* aerial-architecture-buildings-286744.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EB20FE2B0D005E6403 /* aerial-architecture-buildings-286744.jpg */; };
+		6609988321062E200094C9D9 /* attractive-beautiful-beauty-1030848.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EC20FE2B0D005E6403 /* attractive-beautiful-beauty-1030848.jpg */; };
+		6609988421062E200094C9D9 /* adult-beautiful-blur-445109.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5ED20FE2B0D005E6403 /* adult-beautiful-blur-445109.jpg */; };
+		6609988521062E200094C9D9 /* attractive-beautiful-beauty-594421.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EE20FE2B0D005E6403 /* attractive-beautiful-beauty-594421.jpg */; };
+		6609988621062E200094C9D9 /* earphones-earpods-justifyyourlove-802958.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EF20FE2B0D005E6403 /* earphones-earpods-justifyyourlove-802958.jpg */; };
+		6609988721062E200094C9D9 /* adorable-beautiful-child-265957.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F020FE2B0D005E6403 /* adorable-beautiful-child-265957.jpg */; };
+		6609988821062E200094C9D9 /* antioxidant-berry-beverage-1229361.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F120FE2B0D005E6403 /* antioxidant-berry-beverage-1229361.jpg */; };
+		6609988921062E200094C9D9 /* beach-bird-s-eye-view-colors-697313.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F220FE2B0D005E6403 /* beach-bird-s-eye-view-colors-697313.jpg */; };
+		6609988A21062E200094C9D9 /* audio-dj-mix-63703.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F320FE2B0D005E6403 /* audio-dj-mix-63703.jpg */; };
+		6609988B21062E200094C9D9 /* beautiful-cellphone-cute-761963.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F420FE2B0D005E6403 /* beautiful-cellphone-cute-761963.jpg */; };
+		6609988C21062E200094C9D9 /* cheerful-club-concert-2143.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F520FE2B0D005E6403 /* cheerful-club-concert-2143.jpg */; };
+		6609988D21062E200094C9D9 /* analogue-blur-classic-164828.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F720FE2B0D005E6403 /* analogue-blur-classic-164828.jpg */; };
+		6609988E21062E200094C9D9 /* acoustic-guitar-art-artistic-668295.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F820FE2B0D005E6403 /* acoustic-guitar-art-artistic-668295.jpg */; };
+		6609988F21062E200094C9D9 /* black-forest-grass-1541.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F920FE2B0D005E6403 /* black-forest-grass-1541.jpg */; };
+		6609989021062E200094C9D9 /* backlit-beach-clouds-762528.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FA20FE2B0D005E6403 /* backlit-beach-clouds-762528.jpg */; };
+		6609989121062E200094C9D9 /* adorable-animal-baby-160933.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FB20FE2B0D005E6403 /* adorable-animal-baby-160933.jpg */; };
+		6609989221062E200094C9D9 /* aerial-aerial-shot-aerial-view-753873.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FC20FE2B0D005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg */; };
+		6609989321062E200094C9D9 /* beverage-chocolate-cocoa-301650.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FD20FE2B0D005E6403 /* beverage-chocolate-cocoa-301650.jpg */; };
+		6609989421062E200094C9D9 /* attractive-beautiful-beauty-1071049.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FE20FE2B0D005E6403 /* attractive-beautiful-beauty-1071049.jpg */; };
+		6609989521062E200094C9D9 /* adolescent-beautiful-black-dress-264172.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FF20FE2B0D005E6403 /* adolescent-beautiful-black-dress-264172.jpg */; };
+		6609989621062E200094C9D9 /* beautiful-bride-dress-157757.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60020FE2B0D005E6403 /* beautiful-bride-dress-157757.jpg */; };
+		6609989721062E200094C9D9 /* applause-audience-band-196652.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60120FE2B0D005E6403 /* applause-audience-band-196652.jpg */; };
+		6609989821062E200094C9D9 /* back-view-hair-observing-169908.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60220FE2B0D005E6403 /* back-view-hair-observing-169908.jpg */; };
+		6609989921062E200094C9D9 /* music-music-player-record-player-1791.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60320FE2B0D005E6403 /* music-music-player-record-player-1791.jpg */; };
+		6609989A21062E200094C9D9 /* beautiful-brunette-business-388517.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60420FE2B0D005E6403 /* beautiful-brunette-business-388517.jpg */; };
+		6609989B21062E200094C9D9 /* close-up-fashion-female-373945.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60520FE2B0D005E6403 /* close-up-fashion-female-373945.jpg */; };
+		6609989C21062E200094C9D9 /* abstract-art-artistic-1212408.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60620FE2B0D005E6403 /* abstract-art-artistic-1212408.jpg */; };
+		6609989D21062E200094C9D9 /* audience-band-concert-1105666.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60720FE2B0D005E6403 /* audience-band-concert-1105666.jpg */; };
 		661A6CFA20E26D97001636DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661A6CF920E26D97001636DF /* AppDelegate.swift */; };
 		661A6CFF20E26D97001636DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661A6CFD20E26D97001636DF /* Main.storyboard */; };
 		661A6D0120E26D98001636DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661A6D0020E26D98001636DF /* Assets.xcassets */; };
@@ -21,46 +67,6 @@
 		664D5ADB20FF8E350075A1AF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 664D5AD920FF8E350075A1AF /* LICENSE */; };
 		6651D06F2104BB6100CC0B7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6651D06E2104BB6000CC0B7C /* ViewController.swift */; };
 		6651D0712104C17100CC0B7C /* PhotoShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6651D0702104C17100CC0B7C /* PhotoShowController.swift */; };
-		66A2D63120FE2B46005E6403 /* girl-walking-wall-32246.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5DF20FE2B0D005E6403 /* girl-walking-wall-32246.jpg */; };
-		66A2D63220FE2B46005E6403 /* berries-blackberries-breakfast-698857.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E020FE2B0D005E6403 /* berries-blackberries-breakfast-698857.jpg */; };
-		66A2D63320FE2B46005E6403 /* addiction-aerial-background-1056554.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E120FE2B0D005E6403 /* addiction-aerial-background-1056554.jpg */; };
-		66A2D63420FE2B46005E6403 /* adult-beautiful-blue-eyes-206563.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E220FE2B0D005E6403 /* adult-beautiful-blue-eyes-206563.jpg */; };
-		66A2D63520FE2B46005E6403 /* apple-bright-close-up-802959.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E320FE2B0D005E6403 /* apple-bright-close-up-802959.jpg */; };
-		66A2D63620FE2B46005E6403 /* aerial-view-architecture-bridges-681335.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E420FE2B0D005E6403 /* aerial-view-architecture-bridges-681335.jpg */; };
-		66A2D63720FE2B46005E6403 /* adult-beautiful-cold-709803.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E520FE2B0D005E6403 /* adult-beautiful-cold-709803.jpg */; };
-		66A2D63820FE2B46005E6403 /* album-black-classic-167092.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E620FE2B0D005E6403 /* album-black-classic-167092.jpg */; };
-		66A2D63920FE2B46005E6403 /* boardwalk-daylight-environment-1204937.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E720FE2B0D005E6403 /* boardwalk-daylight-environment-1204937.jpg */; };
-		66A2D63A20FE2B46005E6403 /* attractive-beautiful-beauty-731695.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E820FE2B0D005E6403 /* attractive-beautiful-beauty-731695.jpg */; };
-		66A2D63B20FE2B46005E6403 /* child-girl-little-36483.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5E920FE2B0D005E6403 /* child-girl-little-36483.jpg */; };
-		66A2D63C20FE2B46005E6403 /* pexels-photo-712651.jpeg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EA20FE2B0D005E6403 /* pexels-photo-712651.jpeg */; };
-		66A2D63D20FE2B46005E6403 /* aerial-architecture-buildings-286744.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EB20FE2B0D005E6403 /* aerial-architecture-buildings-286744.jpg */; };
-		66A2D63E20FE2B46005E6403 /* attractive-beautiful-beauty-1030848.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EC20FE2B0D005E6403 /* attractive-beautiful-beauty-1030848.jpg */; };
-		66A2D63F20FE2B46005E6403 /* adult-beautiful-blur-445109.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5ED20FE2B0D005E6403 /* adult-beautiful-blur-445109.jpg */; };
-		66A2D64020FE2B46005E6403 /* attractive-beautiful-beauty-594421.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EE20FE2B0D005E6403 /* attractive-beautiful-beauty-594421.jpg */; };
-		66A2D64120FE2B46005E6403 /* earphones-earpods-justifyyourlove-802958.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5EF20FE2B0D005E6403 /* earphones-earpods-justifyyourlove-802958.jpg */; };
-		66A2D64220FE2B46005E6403 /* adorable-beautiful-child-265957.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F020FE2B0D005E6403 /* adorable-beautiful-child-265957.jpg */; };
-		66A2D64320FE2B46005E6403 /* antioxidant-berry-beverage-1229361.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F120FE2B0D005E6403 /* antioxidant-berry-beverage-1229361.jpg */; };
-		66A2D64420FE2B46005E6403 /* beach-bird-s-eye-view-colors-697313.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F220FE2B0D005E6403 /* beach-bird-s-eye-view-colors-697313.jpg */; };
-		66A2D64520FE2B46005E6403 /* audio-dj-mix-63703.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F320FE2B0D005E6403 /* audio-dj-mix-63703.jpg */; };
-		66A2D64620FE2B46005E6403 /* beautiful-cellphone-cute-761963.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F420FE2B0D005E6403 /* beautiful-cellphone-cute-761963.jpg */; };
-		66A2D64720FE2B46005E6403 /* cheerful-club-concert-2143.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F520FE2B0D005E6403 /* cheerful-club-concert-2143.jpg */; };
-		66A2D64820FE2B46005E6403 /* analogue-blur-classic-164828.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F720FE2B0D005E6403 /* analogue-blur-classic-164828.jpg */; };
-		66A2D64920FE2B46005E6403 /* acoustic-guitar-art-artistic-668295.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F820FE2B0D005E6403 /* acoustic-guitar-art-artistic-668295.jpg */; };
-		66A2D64A20FE2B46005E6403 /* black-forest-grass-1541.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5F920FE2B0D005E6403 /* black-forest-grass-1541.jpg */; };
-		66A2D64B20FE2B46005E6403 /* backlit-beach-clouds-762528.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FA20FE2B0D005E6403 /* backlit-beach-clouds-762528.jpg */; };
-		66A2D64C20FE2B46005E6403 /* adorable-animal-baby-160933.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FB20FE2B0D005E6403 /* adorable-animal-baby-160933.jpg */; };
-		66A2D64D20FE2B46005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FC20FE2B0D005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg */; };
-		66A2D64E20FE2B46005E6403 /* beverage-chocolate-cocoa-301650.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FD20FE2B0D005E6403 /* beverage-chocolate-cocoa-301650.jpg */; };
-		66A2D64F20FE2B46005E6403 /* attractive-beautiful-beauty-1071049.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FE20FE2B0D005E6403 /* attractive-beautiful-beauty-1071049.jpg */; };
-		66A2D65020FE2B46005E6403 /* adolescent-beautiful-black-dress-264172.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D5FF20FE2B0D005E6403 /* adolescent-beautiful-black-dress-264172.jpg */; };
-		66A2D65120FE2B46005E6403 /* beautiful-bride-dress-157757.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60020FE2B0D005E6403 /* beautiful-bride-dress-157757.jpg */; };
-		66A2D65220FE2B46005E6403 /* applause-audience-band-196652.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60120FE2B0D005E6403 /* applause-audience-band-196652.jpg */; };
-		66A2D65320FE2B46005E6403 /* back-view-hair-observing-169908.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60220FE2B0D005E6403 /* back-view-hair-observing-169908.jpg */; };
-		66A2D65420FE2B46005E6403 /* music-music-player-record-player-1791.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60320FE2B0D005E6403 /* music-music-player-record-player-1791.jpg */; };
-		66A2D65520FE2B46005E6403 /* beautiful-brunette-business-388517.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60420FE2B0D005E6403 /* beautiful-brunette-business-388517.jpg */; };
-		66A2D65620FE2B46005E6403 /* close-up-fashion-female-373945.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60520FE2B0D005E6403 /* close-up-fashion-female-373945.jpg */; };
-		66A2D65720FE2B46005E6403 /* abstract-art-artistic-1212408.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60620FE2B0D005E6403 /* abstract-art-artistic-1212408.jpg */; };
-		66A2D65820FE2B46005E6403 /* audience-band-concert-1105666.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 66A2D60720FE2B0D005E6403 /* audience-band-concert-1105666.jpg */; };
 		66CEC4C620E7B1A7007E1D32 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CEC4C520E7B1A7007E1D32 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,52 +77,64 @@
 			dstPath = Photos;
 			dstSubfolderSpec = 7;
 			files = (
-				66A2D63120FE2B46005E6403 /* girl-walking-wall-32246.jpg in CopyFiles */,
-				66A2D63220FE2B46005E6403 /* berries-blackberries-breakfast-698857.jpg in CopyFiles */,
-				66A2D63320FE2B46005E6403 /* addiction-aerial-background-1056554.jpg in CopyFiles */,
-				66A2D63420FE2B46005E6403 /* adult-beautiful-blue-eyes-206563.jpg in CopyFiles */,
-				66A2D63520FE2B46005E6403 /* apple-bright-close-up-802959.jpg in CopyFiles */,
-				66A2D63620FE2B46005E6403 /* aerial-view-architecture-bridges-681335.jpg in CopyFiles */,
-				66A2D63720FE2B46005E6403 /* adult-beautiful-cold-709803.jpg in CopyFiles */,
-				66A2D63820FE2B46005E6403 /* album-black-classic-167092.jpg in CopyFiles */,
-				66A2D63920FE2B46005E6403 /* boardwalk-daylight-environment-1204937.jpg in CopyFiles */,
-				66A2D63A20FE2B46005E6403 /* attractive-beautiful-beauty-731695.jpg in CopyFiles */,
-				66A2D63B20FE2B46005E6403 /* child-girl-little-36483.jpg in CopyFiles */,
-				66A2D63C20FE2B46005E6403 /* pexels-photo-712651.jpeg in CopyFiles */,
-				66A2D63D20FE2B46005E6403 /* aerial-architecture-buildings-286744.jpg in CopyFiles */,
-				66A2D63E20FE2B46005E6403 /* attractive-beautiful-beauty-1030848.jpg in CopyFiles */,
-				66A2D63F20FE2B46005E6403 /* adult-beautiful-blur-445109.jpg in CopyFiles */,
-				66A2D64020FE2B46005E6403 /* attractive-beautiful-beauty-594421.jpg in CopyFiles */,
-				66A2D64120FE2B46005E6403 /* earphones-earpods-justifyyourlove-802958.jpg in CopyFiles */,
-				66A2D64220FE2B46005E6403 /* adorable-beautiful-child-265957.jpg in CopyFiles */,
-				66A2D64320FE2B46005E6403 /* antioxidant-berry-beverage-1229361.jpg in CopyFiles */,
-				66A2D64420FE2B46005E6403 /* beach-bird-s-eye-view-colors-697313.jpg in CopyFiles */,
-				66A2D64520FE2B46005E6403 /* audio-dj-mix-63703.jpg in CopyFiles */,
-				66A2D64620FE2B46005E6403 /* beautiful-cellphone-cute-761963.jpg in CopyFiles */,
-				66A2D64720FE2B46005E6403 /* cheerful-club-concert-2143.jpg in CopyFiles */,
-				66A2D64820FE2B46005E6403 /* analogue-blur-classic-164828.jpg in CopyFiles */,
-				66A2D64920FE2B46005E6403 /* acoustic-guitar-art-artistic-668295.jpg in CopyFiles */,
-				66A2D64A20FE2B46005E6403 /* black-forest-grass-1541.jpg in CopyFiles */,
-				66A2D64B20FE2B46005E6403 /* backlit-beach-clouds-762528.jpg in CopyFiles */,
-				66A2D64C20FE2B46005E6403 /* adorable-animal-baby-160933.jpg in CopyFiles */,
-				66A2D64D20FE2B46005E6403 /* aerial-aerial-shot-aerial-view-753873.jpg in CopyFiles */,
-				66A2D64E20FE2B46005E6403 /* beverage-chocolate-cocoa-301650.jpg in CopyFiles */,
-				66A2D64F20FE2B46005E6403 /* attractive-beautiful-beauty-1071049.jpg in CopyFiles */,
-				66A2D65020FE2B46005E6403 /* adolescent-beautiful-black-dress-264172.jpg in CopyFiles */,
-				66A2D65120FE2B46005E6403 /* beautiful-bride-dress-157757.jpg in CopyFiles */,
-				66A2D65220FE2B46005E6403 /* applause-audience-band-196652.jpg in CopyFiles */,
-				66A2D65320FE2B46005E6403 /* back-view-hair-observing-169908.jpg in CopyFiles */,
-				66A2D65420FE2B46005E6403 /* music-music-player-record-player-1791.jpg in CopyFiles */,
-				66A2D65520FE2B46005E6403 /* beautiful-brunette-business-388517.jpg in CopyFiles */,
-				66A2D65620FE2B46005E6403 /* close-up-fashion-female-373945.jpg in CopyFiles */,
-				66A2D65720FE2B46005E6403 /* abstract-art-artistic-1212408.jpg in CopyFiles */,
-				66A2D65820FE2B46005E6403 /* audience-band-concert-1105666.jpg in CopyFiles */,
+				6609987021062E1F0094C9D9 /* architecture-buildings-city-533930.jpg in CopyFiles */,
+				6609987121062E1F0094C9D9 /* balance-ballet-ballet-dancer-219615.jpg in CopyFiles */,
+				6609987221062E1F0094C9D9 /* beach-clouds-landscape-63564.jpg in CopyFiles */,
+				6609987321062E1F0094C9D9 /* bloom-blossom-cherry-blossom-54630.jpg in CopyFiles */,
+				6609987421062E1F0094C9D9 /* dark-full-moon-lunar-53153.jpg in CopyFiles */,
+				6609987521062E1F0094C9D9 /* daylight-environment-forest-459225.jpg in CopyFiles */,
+				6609987621062E1F0094C9D9 /* girl-walking-wall-32246.jpg in CopyFiles */,
+				6609987721062E200094C9D9 /* berries-blackberries-breakfast-698857.jpg in CopyFiles */,
+				6609987821062E200094C9D9 /* addiction-aerial-background-1056554.jpg in CopyFiles */,
+				6609987921062E200094C9D9 /* adult-beautiful-blue-eyes-206563.jpg in CopyFiles */,
+				6609987A21062E200094C9D9 /* apple-bright-close-up-802959.jpg in CopyFiles */,
+				6609987B21062E200094C9D9 /* aerial-view-architecture-bridges-681335.jpg in CopyFiles */,
+				6609987C21062E200094C9D9 /* adult-beautiful-cold-709803.jpg in CopyFiles */,
+				6609987D21062E200094C9D9 /* album-black-classic-167092.jpg in CopyFiles */,
+				6609987E21062E200094C9D9 /* boardwalk-daylight-environment-1204937.jpg in CopyFiles */,
+				6609987F21062E200094C9D9 /* attractive-beautiful-beauty-731695.jpg in CopyFiles */,
+				6609988021062E200094C9D9 /* child-girl-little-36483.jpg in CopyFiles */,
+				6609988121062E200094C9D9 /* pexels-photo-712651.jpeg in CopyFiles */,
+				6609988221062E200094C9D9 /* aerial-architecture-buildings-286744.jpg in CopyFiles */,
+				6609988321062E200094C9D9 /* attractive-beautiful-beauty-1030848.jpg in CopyFiles */,
+				6609988421062E200094C9D9 /* adult-beautiful-blur-445109.jpg in CopyFiles */,
+				6609988521062E200094C9D9 /* attractive-beautiful-beauty-594421.jpg in CopyFiles */,
+				6609988621062E200094C9D9 /* earphones-earpods-justifyyourlove-802958.jpg in CopyFiles */,
+				6609988721062E200094C9D9 /* adorable-beautiful-child-265957.jpg in CopyFiles */,
+				6609988821062E200094C9D9 /* antioxidant-berry-beverage-1229361.jpg in CopyFiles */,
+				6609988921062E200094C9D9 /* beach-bird-s-eye-view-colors-697313.jpg in CopyFiles */,
+				6609988A21062E200094C9D9 /* audio-dj-mix-63703.jpg in CopyFiles */,
+				6609988B21062E200094C9D9 /* beautiful-cellphone-cute-761963.jpg in CopyFiles */,
+				6609988C21062E200094C9D9 /* cheerful-club-concert-2143.jpg in CopyFiles */,
+				6609988D21062E200094C9D9 /* analogue-blur-classic-164828.jpg in CopyFiles */,
+				6609988E21062E200094C9D9 /* acoustic-guitar-art-artistic-668295.jpg in CopyFiles */,
+				6609988F21062E200094C9D9 /* black-forest-grass-1541.jpg in CopyFiles */,
+				6609989021062E200094C9D9 /* backlit-beach-clouds-762528.jpg in CopyFiles */,
+				6609989121062E200094C9D9 /* adorable-animal-baby-160933.jpg in CopyFiles */,
+				6609989221062E200094C9D9 /* aerial-aerial-shot-aerial-view-753873.jpg in CopyFiles */,
+				6609989321062E200094C9D9 /* beverage-chocolate-cocoa-301650.jpg in CopyFiles */,
+				6609989421062E200094C9D9 /* attractive-beautiful-beauty-1071049.jpg in CopyFiles */,
+				6609989521062E200094C9D9 /* adolescent-beautiful-black-dress-264172.jpg in CopyFiles */,
+				6609989621062E200094C9D9 /* beautiful-bride-dress-157757.jpg in CopyFiles */,
+				6609989721062E200094C9D9 /* applause-audience-band-196652.jpg in CopyFiles */,
+				6609989821062E200094C9D9 /* back-view-hair-observing-169908.jpg in CopyFiles */,
+				6609989921062E200094C9D9 /* music-music-player-record-player-1791.jpg in CopyFiles */,
+				6609989A21062E200094C9D9 /* beautiful-brunette-business-388517.jpg in CopyFiles */,
+				6609989B21062E200094C9D9 /* close-up-fashion-female-373945.jpg in CopyFiles */,
+				6609989C21062E200094C9D9 /* abstract-art-artistic-1212408.jpg in CopyFiles */,
+				6609989D21062E200094C9D9 /* audience-band-concert-1105666.jpg in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		660998642106266B0094C9D9 /* balance-ballet-ballet-dancer-219615.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "balance-ballet-ballet-dancer-219615.jpg"; sourceTree = "<group>"; };
+		660998652106266B0094C9D9 /* architecture-buildings-city-533930.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "architecture-buildings-city-533930.jpg"; sourceTree = "<group>"; };
+		660998662106266B0094C9D9 /* dark-full-moon-lunar-53153.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dark-full-moon-lunar-53153.jpg"; sourceTree = "<group>"; };
+		660998672106266C0094C9D9 /* bloom-blossom-cherry-blossom-54630.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bloom-blossom-cherry-blossom-54630.jpg"; sourceTree = "<group>"; };
+		660998682106266C0094C9D9 /* beach-clouds-landscape-63564.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "beach-clouds-landscape-63564.jpg"; sourceTree = "<group>"; };
+		660998692106266C0094C9D9 /* daylight-environment-forest-459225.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "daylight-environment-forest-459225.jpg"; sourceTree = "<group>"; };
 		661A6CF620E26D97001636DF /* PhotoPrivateGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoPrivateGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		661A6CF920E26D97001636DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		661A6CFE20E26D97001636DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -262,6 +280,12 @@
 		66A2D5DE20FE2B0D005E6403 /* photos */ = {
 			isa = PBXGroup;
 			children = (
+				660998652106266B0094C9D9 /* architecture-buildings-city-533930.jpg */,
+				660998642106266B0094C9D9 /* balance-ballet-ballet-dancer-219615.jpg */,
+				660998682106266C0094C9D9 /* beach-clouds-landscape-63564.jpg */,
+				660998672106266C0094C9D9 /* bloom-blossom-cherry-blossom-54630.jpg */,
+				660998662106266B0094C9D9 /* dark-full-moon-lunar-53153.jpg */,
+				660998692106266C0094C9D9 /* daylight-environment-forest-459225.jpg */,
 				66A2D5DF20FE2B0D005E6403 /* girl-walking-wall-32246.jpg */,
 				66A2D5E020FE2B0D005E6403 /* berries-blackberries-breakfast-698857.jpg */,
 				66A2D5E120FE2B0D005E6403 /* addiction-aerial-background-1056554.jpg */,
