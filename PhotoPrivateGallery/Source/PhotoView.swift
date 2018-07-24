@@ -22,26 +22,40 @@ class PhotoView: UIView {
     }
     
     var minimumZoomScale: CGFloat {
-        guard let image = self.imageView.image else { return 1.0 }
+        if let image = self.imageView.image {
         
-        var zoomScale: CGFloat = 1.0
-//        if image.size.width <= image.size.height {
-            zoomScale = self.scrollView.frame.size.width / image.size.width
-//        } else {
-//            zoomScale = self.scrollView.frame.size.height / image.size.height
-//        }
-        return zoomScale
+            var zoomScale: CGFloat = 1.0
+            if image.size.width <= image.size.height {
+                zoomScale = self.scrollView.frame.size.width / image.size.width
+            } else {
+                zoomScale = self.scrollView.frame.size.height / image.size.height
+            }
+            
+            return zoomScale
+        } else {
+            return self.scrollView.frame.size.width / containerView.frame.size.width
+        }
     }
     
     var maximumZoomScale: CGFloat {
         guard let image = self.image else {
-            return 1.0
+            return 2.0
         }
 //        if image.size.width <= image.size.height {
-            return image.size.width / self.scrollView.frame.size.width
+//            return image.size.width / self.scrollView.frame.size.width
 //        } else {
 //            return image.size.height / self.scrollView.frame.size.height
 //        }
+        
+        let wScale = image.size.width / self.scrollView.frame.width
+        let hScale = image.size.height / self.scrollView.frame.height
+        
+        var properMaxScale = max(wScale, hScale)
+        if properMaxScale < 2.0 {
+            properMaxScale = 2.0
+        }
+        
+        return properMaxScale
     }
     
     override var frame: CGRect {
