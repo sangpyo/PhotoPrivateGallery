@@ -22,30 +22,24 @@ class PhotoView: UIView {
     }
     
     var minimumZoomScale: CGFloat {
-        if let image = self.imageView.image {
-        
-            var zoomScale: CGFloat = 1.0
-            if image.size.width <= image.size.height {
-                zoomScale = self.scrollView.frame.size.width / image.size.width
-            } else {
-                zoomScale = self.scrollView.frame.size.height / image.size.height
-            }
-            
-            return zoomScale
-        } else {
-            return self.scrollView.frame.size.width / containerView.frame.size.width
+        guard let image = self.imageView.image else {
+            return 1.0
         }
+
+        var zoomScale = self.scrollView.frame.size.width / image.size.width
+
+        let hScaled = image.size.height * zoomScale
+        if hScaled > self.scrollView.frame.size.height {
+            zoomScale = self.scrollView.frame.size.height / image.size.width
+        }
+        
+        return zoomScale
     }
     
     var maximumZoomScale: CGFloat {
-        guard let image = self.image else {
+        guard let image = self.imageView.image else {
             return 2.0
         }
-//        if image.size.width <= image.size.height {
-//            return image.size.width / self.scrollView.frame.size.width
-//        } else {
-//            return image.size.height / self.scrollView.frame.size.height
-//        }
         
         let wScale = image.size.width / self.scrollView.frame.width
         let hScale = image.size.height / self.scrollView.frame.height
@@ -54,7 +48,7 @@ class PhotoView: UIView {
         if properMaxScale < 2.0 {
             properMaxScale = 2.0
         }
-        
+
         return properMaxScale
     }
     
@@ -68,14 +62,13 @@ class PhotoView: UIView {
         didSet {
             self.updateSubviews()
             self.scrollView.zoomScale = minimumZoomScale
+            self.scrollView.minimumZoomScale = minimumZoomScale
+            self.scrollView.maximumZoomScale = maximumZoomScale
         }
     }
     
     override func layoutSubviews() {
         self.updateSubviews()
-        self.scrollView.maximumZoomScale = maximumZoomScale
-        self.scrollView.minimumZoomScale = minimumZoomScale
-        self.scrollView.zoomScale = minimumZoomScale
     }
     
     var image: UIImage? {
@@ -85,6 +78,8 @@ class PhotoView: UIView {
                 self.imageView.frame.size = image.size
                 self.containerView.frame.size = image.size
                 self.scrollView.zoomScale = minimumZoomScale
+                self.scrollView.minimumZoomScale = minimumZoomScale
+                self.scrollView.maximumZoomScale = maximumZoomScale
                 centering()
             }
         }
@@ -121,8 +116,6 @@ class PhotoView: UIView {
         
         self.visualEffectView.effect = UIBlurEffect(style: .regular)
 
-        self.scrollView.minimumZoomScale = minimumZoomScale
-        self.scrollView.maximumZoomScale = maximumZoomScale
         self.scrollView.delegate = self
         self.scrollView.panGestureRecognizer.allowedTouchTypes = [UITouch.TouchType.direct.rawValue as NSNumber]
         self.scrollView.pinchGestureRecognizer?.allowedTouchTypes = [UITouch.TouchType.direct.rawValue as NSNumber]
@@ -137,14 +130,13 @@ class PhotoView: UIView {
         let rect = CGRect(origin: CGPoint.zero, size: self.frame.size)
         self.visualEffectView.frame = rect
         self.scrollView.frame = rect
-        self.scrollView.minimumZoomScale = minimumZoomScale
-        self.scrollView.maximumZoomScale = maximumZoomScale
+
         self.centering()
     }
     
     func centering() {
-        let heightInset = max((self.scrollView.frame.height - self.imageView.frame.height) / 2, 0) + self.baseMargin / 2
-        let widthInset = max((self.scrollView.frame.width - self.imageView.frame.width) / 2, 0) + self.baseMargin / 2
+        let heightInset = max((self.scrollView.frame.height - self.imageView.frame.height) / 2, 0)
+        let widthInset = max((self.scrollView.frame.width - self.imageView.frame.width) / 2, 0)
         let contentInset = UIEdgeInsets(top: heightInset, left: widthInset, bottom: heightInset, right: widthInset)
         self.scrollView.contentInset = contentInset
     }
