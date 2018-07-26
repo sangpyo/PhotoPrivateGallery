@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("\(target)")
         let source = Bundle.main.url(forResource: PhotoGalleryViewController.photoFolderName, withExtension: nil)!
         
-        try? FileManager.default.removeItem(at: target)
+        //try? FileManager.default.removeItem(at: target)
         do {
             try FileManager.default.copyItem(at: source, to: target)
         } catch let e {
