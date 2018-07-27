@@ -14,7 +14,7 @@ extension CIImage {
     var aspectRatio: CGFloat {
         let imageWidth: CGFloat = self.extent.size.width
         let imageHeight: CGFloat = self.extent.size.height
-        let aspectRatio = imageHeight / imageWidth
+        let aspectRatio = imageWidth / imageHeight
         return aspectRatio
     }
     
@@ -30,7 +30,7 @@ extension CGImage {
     var aspectRatio: CGFloat {
         let imageWidth: CGFloat = CGFloat(self.width)
         let imageHeight: CGFloat = CGFloat(self.height)
-        let aspectRatio =  imageHeight / imageWidth
+        let aspectRatio =  imageWidth / imageHeight
         return aspectRatio
     }
     
@@ -46,7 +46,7 @@ extension CGImage {
 
 extension UIImage {
     var aspectRatio: CGFloat {
-        return self.size.height / self.size.height
+        return self.size.width / self.size.height
     }
 }
 
@@ -65,13 +65,15 @@ struct Photo {
         return CGSize(width: originalImage.width, height: originalImage.height)
     }
     
-    func height(forWidth: CGFloat) -> CGFloat {
-        let aspectRatio = self.originalImage.aspectRatio
-        // aspectRatio = width / height
-        // aspectRatio * height = width
-        // height = width / aspectRatio
-        let height = forWidth * aspectRatio
-        return height
+    func sizeForRect(_ rect: CGRect) -> CGSize {
+        var width = rect.width
+        var height = width * self.aspectRatio
+        
+        if height > rect.height {
+            height = rect.height
+            width = height / self.aspectRatio
+        }
+        return CGSize(width: width, height: height)
     }
     
     func scaledCGImage(to scale: CGFloat) -> CGImage {

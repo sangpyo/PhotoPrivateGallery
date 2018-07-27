@@ -35,8 +35,6 @@ class PhotoShowController: UIViewController {
 
         photoView.image = photo.uiImage
         
-        photoView.baseMargin = 44.0
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))
         tapGesture.numberOfTapsRequired = 1
         self.view.addGestureRecognizer(tapGesture)

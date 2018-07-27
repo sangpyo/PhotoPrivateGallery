@@ -12,70 +12,82 @@ class PhotoView: UIView {
 
     private let visualEffectView = UIVisualEffectView()
     private let scrollView = UIScrollView()
-    private let containerView = UIView()
     private let imageView = UIImageView()
     
-    var baseMargin = CGFloat(44.0) {
+    var marginRatio: CGFloat = 0.1 {
+        willSet {
+            if newValue > 0.3 {
+                self.marginRatio = 0.2
+            } else if newValue < 0.0 {
+                self.marginRatio = 0.0
+            }
+        }
         didSet {
-            centering()
+            
         }
     }
     
-    var minimumZoomScale: CGFloat {
-//        guard let image = self.imageView.image else {
-//            return 0.5
-//        }
+    var properImageViewSize: CGSize? {
+        guard let image = self.imageView.image else {
+            return nil
+        }
+        guard image.size != CGSize.zero else {
+            return nil
+        }
+        guard self.frame.size != CGSize.zero else {
+            return nil
+        }
+        var width = self.frame.width
+        var height = width * image.aspectRatio
         
-        var zoomScale: CGFloat = 0.5
-//        if image.size.width < self.frame.width && image.size.height < self.frame.height {
-//            zoomScale = 1.0
-//        } else {
-//            zoomScale = self.scrollView.frame.size.width / image.size.width
-//
-//            let hScaled = image.size.height * zoomScale
-//            if hScaled > self.scrollView.frame.size.height {
-//                zoomScale = self.scrollView.frame.size.height / image.size.height
-//            }
-//        }
-        
-        if containerView.frame.size.width < self.frame.width && containerView.frame.size.height < self.frame.height {
-            zoomScale = 1.0
-        } else {
-            zoomScale = self.scrollView.frame.size.width / containerView.frame.size.width
-            
-            let hScaled = containerView.frame.size.height * zoomScale
-            if hScaled > self.scrollView.frame.size.height {
-                zoomScale = self.scrollView.frame.size.height / containerView.frame.size.height
-            }
+        if height > self.frame.height {
+            height = self.frame.height
+            width = height / image.aspectRatio
+        }
+        return CGSize(width: width * (1 - marginRatio), height: height * (1 - marginRatio))
+    }
+    
+    var minimumZoomScale: CGFloat? {
+        guard let image = self.imageView.image else {
+            return nil
+        }
+        guard image.size != CGSize.zero else {
+            return nil
         }
         
+        var zoomScale: CGFloat = 0.5
+        if image.size.width < self.frame.width && image.size.height < self.frame.height {
+            zoomScale = 1.0
+        } else {
+            zoomScale = self.scrollView.frame.size.width / image.size.width
+
+            let hScaled = image.size.height * zoomScale
+            if hScaled > self.scrollView.frame.size.height {
+                zoomScale = self.scrollView.frame.size.height / image.size.height
+            }
+        }
+
         return zoomScale
     }
     
-    var maximumZoomScale: CGFloat {
-//        guard let image = self.imageView.image else {
-//            return 2.0
-//        }
+    var maximumZoomScale: CGFloat? {
+        guard let image = self.imageView.image else {
+            return nil
+        }
+        guard let minimumZoomScale = self.minimumZoomScale else {
+            return nil
+        }
+        guard self.scrollView.frame.size != CGSize.zero else {
+            return nil
+        }
         
         var zoomScale: CGFloat = minimumZoomScale * 2.0
-//        if image.size.width < self.frame.width && image.size.height < self.frame.height {
-//            zoomScale = fitZoomScale * 2.0
-//        } else {
-//            let wScale = image.size.width / self.scrollView.frame.width
-//            let hScale = image.size.height / self.scrollView.frame.height
-//
-//            zoomScale = max(wScale, hScale)
-//            if zoomScale < 2.0 {
-//                zoomScale = 2.0
-//            }
-//        }
-        
-        if containerView.frame.size.width < self.frame.width && containerView.frame.size.height < self.frame.height {
-            zoomScale = fitZoomScale * 2.0
+        if image.size.width < self.frame.width && image.size.height < self.frame.height {
+            zoomScale = minimumZoomScale * 2.0
         } else {
-            let wScale = containerView.frame.size.width / self.scrollView.frame.width
-            let hScale = containerView.frame.size.height / self.scrollView.frame.height
-            
+            let wScale = image.size.width / self.scrollView.frame.width
+            let hScale = image.size.height / self.scrollView.frame.height
+
             zoomScale = max(wScale, hScale)
             if zoomScale < 2.0 {
                 zoomScale = 2.0
@@ -85,46 +97,36 @@ class PhotoView: UIView {
         return zoomScale
     }
     
-    var fitZoomScale: CGFloat {
-//        guard let image = self.image else {
-//            return 1.0
-//
-//        }
+    var fitZoomScale: CGFloat? {
+        guard let image = self.image else {
+            return nil
+        }
+        guard image.size != CGSize.zero else {
+            return nil
+        }
         
-        var zoomScale = minimumZoomScale
-//        if image.size.width < self.frame.width && image.size.height < self.frame.height {
-//            zoomScale = self.scrollView.frame.size.width / image.size.width
-//
-//            let hScaled = image.size.height * zoomScale
-//            if hScaled > self.scrollView.frame.size.height {
-//                zoomScale = self.scrollView.frame.size.height / image.size.height
-//            }
-//        }
-        if containerView.frame.size.width < self.frame.width && containerView.frame.size.height < self.frame.height {
-            zoomScale = self.scrollView.frame.size.width / containerView.frame.size.width
-            
-            let hScaled = containerView.frame.size.height * zoomScale
+        var zoomScale: CGFloat = 1.0
+        if image.size.width < self.frame.width && image.size.height < self.frame.height {
+            zoomScale = self.scrollView.frame.size.width / image.size.width
+
+            let hScaled = image.size.height * zoomScale
             if hScaled > self.scrollView.frame.size.height {
-                zoomScale = self.scrollView.frame.size.height / containerView.frame.size.height
+                zoomScale = self.scrollView.frame.size.height / image.size.height
             }
         }
+
         return zoomScale
     }
     
     override var frame: CGRect {
         didSet {
             self.updateSubviews()
-             print("fr - \(self.containerView.frame) \(self.scrollView.frame)")
         }
     }
     
     override var center: CGPoint {
         didSet {
             self.updateSubviews()
-            self.scrollView.zoomScale = fitZoomScale
-            self.scrollView.minimumZoomScale = minimumZoomScale
-            self.scrollView.maximumZoomScale = maximumZoomScale
-             print("ct - \(self.containerView.frame) \(self.scrollView.frame)")
         }
     }
     
@@ -135,16 +137,11 @@ class PhotoView: UIView {
     var image: UIImage? {
         set {
             self.imageView.image = newValue
-            if let image = newValue {
-                self.imageView.frame.size = image.size
-                self.containerView.frame.origin = CGPoint.zero
-                self.containerView.frame.size = image.size
-                self.scrollView.zoomScale = fitZoomScale
-                self.scrollView.minimumZoomScale = minimumZoomScale
-                self.scrollView.maximumZoomScale = maximumZoomScale
-                centering()
-                print("im - \(self.containerView.frame) \(self.scrollView.frame) \(image.size)")
+            if let properImageViewSize = self.properImageViewSize {
+                self.imageView.frame.size = properImageViewSize
+                self.scrollView.contentSize = properImageViewSize
             }
+            updateSubviews()
         }
         get {
             return self.imageView.image
@@ -153,6 +150,7 @@ class PhotoView: UIView {
     
     convenience init(image: UIImage) {
         self.init(frame: CGRect.zero)
+        self.setup()
         self.image = image
     }
     
@@ -171,14 +169,12 @@ class PhotoView: UIView {
         let flexibleDimensions: UIView.AutoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.scrollView.autoresizingMask = flexibleDimensions
         
-        self.containerView.backgroundColor = UIColor.lightGray
         self.scrollView.backgroundColor = UIColor.clear
         self.backgroundColor = UIColor.clear
         
         self.addSubview(self.visualEffectView)
         self.addSubview(self.scrollView)
-        self.scrollView.addSubview(self.containerView)
-        self.containerView.addSubview(self.imageView)
+        self.scrollView.addSubview(self.imageView)
         
         self.visualEffectView.effect = UIBlurEffect(style: .regular)
 
@@ -188,47 +184,36 @@ class PhotoView: UIView {
         self.imageView.isUserInteractionEnabled = true
 
         self.imageView.contentMode = .scaleAspectFit
-        
-        let v = UIView(frame: CGRect(x: 60, y: 60, width: 100, height: 100))
-        v.backgroundColor = UIColor.red
-        self.containerView.addSubview(v)
-        self.containerView.frame = CGRect(x: 0, y: 0, width: 1000, height: 1000)
-        
-        self.updateSubviews()
     }
 
     private func updateSubviews() {
+        guard self.frame.size != CGSize.zero else {
+            return
+        }
+        
         let rect = CGRect(origin: CGPoint.zero, size: self.frame.size)
         self.visualEffectView.frame = rect
         self.scrollView.frame = rect
         
-        self.scrollView.zoomScale = fitZoomScale
-        self.scrollView.minimumZoomScale = minimumZoomScale
-        self.scrollView.maximumZoomScale = maximumZoomScale
-        
-        if let image = self.image {
-            self.containerView.frame = CGRect(origin: CGPoint.zero, size: image.size + self.baseMargin * 2)
-            self.imageView.frame.origin = CGPoint(x: self.baseMargin, y: self.baseMargin)
-        }
-
+        self.scrollView.zoomScale = 1.0 //fitZoomScale
+        self.scrollView.minimumZoomScale = 1.0 //minimumZoomScale
+        self.scrollView.maximumZoomScale = 2.0 //maximumZoomScale
         self.centering()
-        
-        print("us - \(self.containerView.frame) \(self.scrollView.frame)")
     }
     
     func centering() {
-        let heightInset = max((self.scrollView.frame.height - self.containerView.frame.height) / 2, 0)
-        let widthInset = max((self.scrollView.frame.width - self.containerView.frame.width) / 2, 0)
-        let contentInset = UIEdgeInsets(top: heightInset, left: widthInset, bottom: heightInset, right: widthInset)
+    
+        let heightInset = max((self.scrollView.frame.height - self.imageView.frame.height) / 2, 0)
+        let widthInset = max((self.scrollView.frame.width - self.imageView.frame.width) / 2, 0)
+        let contentInset = UIEdgeInsets(top: heightInset, left: widthInset, bottom: 0, right: 0)
         self.scrollView.contentInset = contentInset
-        print("centering \(print("ct - \(self.containerView.frame) \(self.scrollView.frame)"))")
     }
 
 }
 
 extension PhotoView: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-        return self.containerView
+        return self.imageView
     }
     
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
@@ -236,11 +221,11 @@ extension PhotoView: UIScrollViewDelegate {
     }
     
     func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-        print("scale \(scale)\n  \(view!.frame) \(self.containerView.frame) \(self.imageView.frame)")
+        
     }
     
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        
+    func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView) {
+        print("\(scrollView)")
     }
 }
 
