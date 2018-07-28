@@ -97,6 +97,30 @@ class PhotoView: UIView {
         return zoomScale
     }
     
+    var maximumZoomScaleForImageView: CGFloat? {
+
+        guard self.scrollView.frame.size != CGSize.zero else {
+            return nil
+        }
+        guard let properImageViewSize = self.properImageViewSize else {
+            return nil
+        }
+        var zoomScale: CGFloat = 2.0
+        if properImageViewSize.width < self.frame.width && properImageViewSize.height < self.frame.height {
+            zoomScale = 2.0
+        } else {
+            let wScale = properImageViewSize.width / self.scrollView.frame.width
+            let hScale = properImageViewSize.height / self.scrollView.frame.height
+            
+            zoomScale = max(wScale, hScale)
+            if zoomScale < 2.0 {
+                zoomScale = 2.0
+            }
+        }
+        
+        return zoomScale
+    }
+    
     var fitZoomScale: CGFloat? {
         guard let image = self.image else {
             return nil
@@ -137,10 +161,6 @@ class PhotoView: UIView {
     var image: UIImage? {
         set {
             self.imageView.image = newValue
-            if let properImageViewSize = self.properImageViewSize {
-                self.imageView.frame.size = properImageViewSize
-                self.scrollView.contentSize = properImageViewSize
-            }
             updateSubviews()
         }
         get {
@@ -195,9 +215,18 @@ class PhotoView: UIView {
         self.visualEffectView.frame = rect
         self.scrollView.frame = rect
         
+        if let properImageViewSize = self.properImageViewSize {
+            self.imageView.frame.size = properImageViewSize
+            self.scrollView.contentSize = properImageViewSize
+        }
+        
         self.scrollView.zoomScale = 1.0 //fitZoomScale
         self.scrollView.minimumZoomScale = 1.0 //minimumZoomScale
-        self.scrollView.maximumZoomScale = 2.0 //maximumZoomScale
+        if let maximumZoomScaleForImageView = self.maximumZoomScaleForImageView {
+            self.scrollView.maximumZoomScale = maximumZoomScaleForImageView
+        } else {
+            self.scrollView.maximumZoomScale = 2.0
+        }
         self.centering()
     }
     
@@ -219,14 +248,7 @@ extension PhotoView: UIScrollViewDelegate {
     func scrollViewDidZoom(_ scrollView: UIScrollView) {
         centering()
     }
-    
-    func scrollViewDidEndZooming(_ scrollView: UIScrollView, with view: UIView?, atScale scale: CGFloat) {
-        
-    }
-    
-    func scrollViewDidChangeAdjustedContentInset(_ scrollView: UIScrollView) {
-        print("\(scrollView)")
-    }
+
 }
 
 

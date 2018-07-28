@@ -18,6 +18,7 @@ class PhotoShowController: UIViewController {
         self.photoView.image = photo.uiImage
         super.init(nibName: nil, bundle: nil)
         self.modalPresentationStyle = .overCurrentContext
+        self.modalTransitionStyle = .crossDissolve
     }
     
     required init?(coder aDecoder: NSCoder) {

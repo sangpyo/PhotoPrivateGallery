@@ -14,7 +14,7 @@ extension CIImage {
     var aspectRatio: CGFloat {
         let imageWidth: CGFloat = self.extent.size.width
         let imageHeight: CGFloat = self.extent.size.height
-        let aspectRatio = imageWidth / imageHeight
+        let aspectRatio =  imageHeight / imageWidth
         return aspectRatio
     }
     
@@ -30,7 +30,7 @@ extension CGImage {
     var aspectRatio: CGFloat {
         let imageWidth: CGFloat = CGFloat(self.width)
         let imageHeight: CGFloat = CGFloat(self.height)
-        let aspectRatio =  imageWidth / imageHeight
+        let aspectRatio = imageHeight / imageWidth
         return aspectRatio
     }
     
@@ -46,7 +46,7 @@ extension CGImage {
 
 extension UIImage {
     var aspectRatio: CGFloat {
-        return self.size.width / self.size.height
+        return  self.size.height / self.size.width
     }
 }
 
